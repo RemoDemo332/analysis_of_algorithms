@@ -190,7 +190,35 @@ For all, There exists...
 \medskip
 
 \noindent Explain how these relations describe bounds on running time (or other resources)
-expended when an algorithm is executed on input of size \textit{n}.
+expended when an algorithm is executed on input of size \textit{n}:
+
+	\medskip
+	The relationship between these asymptotic upper bounds is not an asymptotically tight bound,
+     meaning that it can be (imprecisely) stated that the running time for a binary search is 
+     \textbf{O(n)}. This is because \textbf{O(log n)} will always be less than \textbf{O(n)}, 
+     \textbf{O(n!)}, \textbf{O(2\textsuperscript{n})}, etc.
+     \smallskip
+
+	Because Big-$\Theta$ defines both the upper and lower bounds for running time, it can be stated 
+     that in an algorithm that has a running time of \textbf{$\Theta$(f(n))}, then it must also be 
+     \textbf{O(f(n))}. 
+     \smallskip
+
+	However, the opposite is not always true. It is important to note that the relationships between 
+     each asymptotic notation are not conversely proportional. Simply because a bound imposed onto 
+     Big-$\Theta$ results in the bounds of Big-O changing does not mean that a bound imposed onto Big-
+     O will result in the bounds of Big-$\Theta$ changing.
+	\smallskip
+
+	Use binary search as an example. The worst-case time complexity of a binary search is \textbf{$
+     \Theta$(log\textsuperscript{2}n)}, the \textbf{O(log\textsuperscript{2}n)}. But simply because 
+     binary search runs in \textbf{O(log\textsuperscript{2}n)}, it does not mean that it will run in 
+     \textbf{O(log\textsuperscript{2}n)}.	
+	\smallskip
+
+	(\url{https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation})
+
+	\smallskip
 
 \pagebreak
 
@@ -201,7 +229,7 @@ expended when an algorithm is executed on input of size \textit{n}.
         \hline
         Remington Greko &  Examples of functions\\
         \hline
-        Tyler Gutowski &  \\
+        Tyler Gutowski &  Relationship of bounds on running time\\
         \hline
         Spencer Hirsch & Mathematical definitions and explanations \\
         \hline
